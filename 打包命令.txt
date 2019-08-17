@@ -1,0 +1,1 @@
+>pyinstaller -F  --paths=./widget;./config;./service;./thread;./widget;./widget/component  main.py

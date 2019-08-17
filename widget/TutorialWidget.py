@@ -4,9 +4,9 @@
 import sys
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout
 
-sys.path.append('./widget/component')
+sys.path.append('.\\widget\\component')
 from ReturnToMainWidget import ReturnToMainWidget
-sys.path.append('../config')
+sys.path.append('..\\config')
 import config
 
 class TutorialWidget(QWidget):

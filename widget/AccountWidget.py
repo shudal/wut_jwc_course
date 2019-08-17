@@ -4,7 +4,7 @@ import sys
 from PyQt5.QtWidgets import QWidget, QLineEdit, QPushButton, QHBoxLayout, QVBoxLayout
 from PyQt5.QtSql import QSqlQuery
 
-sys.path.append('./widget/component')
+sys.path.append('.\\widget\\component')
 from ReturnToMainWidget import ReturnToMainWidget
 from MyDataService import MyDataService
 from PyQt5.QtWidgets import QMessageBox

@@ -9,7 +9,8 @@ class ReturnToMainWidget(QWidget):
         super().__init__()
         self.init()
     def init(self):
-        self.returnBtn = QPushButton(QIcon(QFileInfo(__file__).absolutePath() + '/../../static/img/Return.svg'), " ")
+        # self.returnBtn = QPushButton(QIcon(QFileInfo(__file__).absolutePath() + '/../../static/img/return.ico'), " ")
+        self.returnBtn = QPushButton("返回")
         self.returnBtn.setFixedSize(40, 30)
         self.hbox = QHBoxLayout()
         self.hbox.addWidget(self.returnBtn)

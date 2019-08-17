@@ -8,11 +8,11 @@ from PyQt5.QtCore import QFileInfo
 from PyQt5.QtSql import QSqlQuery
 from PyQt5.QtWidgets import QMessageBox
 
-sys.path.append('./widget')
-sys.path.append('./widget/component')
-sys.path.append('./service')
-sys.path.append('./config')
-sys.path.append('./thread')
+sys.path.append('.\\widget')
+sys.path.append('.\\widget\\component')
+sys.path.append('.\\service')
+sys.path.append('.\\config')
+sys.path.append('.\\thread')
 
 # 导入widget
 from MainWidget import MainWidget
@@ -32,6 +32,7 @@ import config
 from GetMainVarThread import GetMainVarThread
 from RobThread import RobThread
 from CheckVersionThread import CheckVersionThread
+import PyQt5.sip
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -42,7 +43,7 @@ class MainWindow(QMainWindow):
     def initVar(self):
         # 设置菜单栏
         self.setMenu()
-        self.myIcon = QIcon(QFileInfo(__file__).absolutePath() + '/static/img/icon.jpg')
+        self.myIcon = QIcon(QFileInfo(__file__).absolutePath() + '/static/img/icon.ico')
         self.statusBar = self.statusBar()
         # 数据库初始化
         self.dataService = MyDataService()

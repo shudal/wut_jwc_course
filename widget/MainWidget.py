@@ -7,7 +7,7 @@ class MainWidget(QWidget):
         super().__init__()
         self.initUI()
     def initUI(self):
-        self.learnButton = QPushButton("使用教程")
+        self.learnButton = QPushButton("说明")
         self.getCourseDataButton = QPushButton("获取课程数据")
         self.selectCourseButton = QPushButton("选课")
         self.startFuckButton = QPushButton("开始抢课")
